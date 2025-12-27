@@ -26,4 +26,28 @@ public class OperationBancaire {
     private CompteBancaire compte;
 
     // getters & setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public OperationType getType() {
+        return type;
+    }
+
+    public double getMontant() {
+        return montant;
+    }
+
+    public LocalDateTime getDateOperation() {
+        return dateOperation;
+    }
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public CompteBancaire getCompte() {
+        return compte;
+    }
 }

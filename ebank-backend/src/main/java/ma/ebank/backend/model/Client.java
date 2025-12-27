@@ -34,4 +34,36 @@ public class Client {
     private User user;
 
     // getters & setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getNumeroIdentite() {
+        return numeroIdentite;
+    }
+
+    public LocalDate getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public User getUser() {
+        return user;
+    }
 }

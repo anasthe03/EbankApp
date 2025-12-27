@@ -16,4 +16,12 @@ public class Role {
     private RoleType name;
 
     // getters & setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public RoleType getName() {
+        return name;
+    }
 }

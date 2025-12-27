@@ -28,4 +28,28 @@ public class CompteBancaire {
     private List<OperationBancaire> operations;
 
     // getters & setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getRib() {
+        return rib;
+    }
+
+    public double getSolde() {
+        return solde;
+    }
+
+    public AccountStatus getStatut() {
+        return statut;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public List<OperationBancaire> getOperations() {
+        return operations;
+    }
 }

@@ -23,4 +23,24 @@ public class User {
     private Role role;
 
     // getters & setters
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public Role getRole() {
+        return role;
+    }
 }
