@@ -24,4 +24,5 @@ public class Role {
     public RoleType getName() {
         return name;
     }
+
 }
