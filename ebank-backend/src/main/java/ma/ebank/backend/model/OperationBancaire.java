@@ -50,4 +50,28 @@ public class OperationBancaire {
     public CompteBancaire getCompte() {
         return compte;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setType(OperationType type) {
+        this.type = type;
+    }
+
+    public void setMontant(double montant) {
+        this.montant = montant;
+    }
+
+    public void setDateOperation(LocalDateTime dateOperation) {
+        this.dateOperation = dateOperation;
+    }
+
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
+
+    public void setCompte(CompteBancaire compte) {
+        this.compte = compte;
+    }
 }

@@ -76,4 +76,5 @@ public class CompteBancaire {
     public void setOperations(List<OperationBancaire> operations) {
         this.operations = operations;
     }
+
 }

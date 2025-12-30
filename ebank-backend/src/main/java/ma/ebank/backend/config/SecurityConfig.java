@@ -41,6 +41,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/agent/**").hasRole("AGENT_GUICHET")
                         .requestMatchers("/api/client/**").hasRole("CLIENT")
+                        .requestMatchers("/api/depot").authenticated()
                         .anyRequest().authenticated()
                 )
                 .userDetailsService(userDetailsService)

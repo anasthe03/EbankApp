@@ -21,7 +21,7 @@ public class DataInitializer {
         return args -> {
 
             // 🧹 reset des users (TEMPORAIRE)
-            userRepository.deleteAll();
+            //userRepository.deleteAll();
 
             // 1️⃣ rôles
             for (RoleType roleType : RoleType.values()) {
