@@ -6,7 +6,6 @@ import ma.ebank.backend.dto.LoginResponse;
 import ma.ebank.backend.config.JwtUtil;
 import ma.ebank.backend.model.User;
 import ma.ebank.backend.repository.UserRepository;
-import ma.ebank.backend.config.UserDetailsImpl;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -44,8 +43,8 @@ public class AuthController {
                             )
                     );
 
-            UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-            User user = userDetails.getUser();
+            // Cast direct vers User (User implémente UserDetails maintenant)
+            User user = (User) authentication.getPrincipal();
 
             String token = jwtUtil.generateToken(user.getLogin());
 
@@ -61,8 +60,8 @@ public class AuthController {
     public void changePassword(@RequestBody ChangePasswordRequest request,
                                Authentication authentication) {
 
-        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-        User user = userDetails.getUser();
+        // Cast direct vers User
+        User user = (User) authentication.getPrincipal();
 
         if (!passwordEncoder.matches(request.getOldPassword(), user.getPassword())) {
             throw new RuntimeException("Ancien mot de passe incorrect");

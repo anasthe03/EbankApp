@@ -2,7 +2,6 @@ package ma.ebank.backend.service;
 
 import ma.ebank.backend.model.User;
 import ma.ebank.backend.repository.UserRepository;
-import ma.ebank.backend.config.UserDetailsImpl;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.stereotype.Service;
 
@@ -19,10 +18,9 @@ public class CustomUserDetailsService implements UserDetailsService {
     public UserDetails loadUserByUsername(String login)
             throws UsernameNotFoundException {
 
-        User user = userRepository.findByLogin(login)
+        // Retourne directement User (qui implémente UserDetails maintenant)
+        return userRepository.findByLogin(login)
                 .orElseThrow(() ->
                         new UsernameNotFoundException("Login ou mot de passe erronés"));
-
-        return new UserDetailsImpl(user);
     }
 }
