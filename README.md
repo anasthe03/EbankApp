@@ -86,9 +86,6 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 server.port=8080
-
-jwt.secret=your_secret_key
-jwt.expiration=3600000
 ```
 
 ### Running the Application
