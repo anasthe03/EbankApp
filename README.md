@@ -1,4 +1,4 @@
-# eBank – Banking Backend Application
+# eBank – Web Banking Application
 
 ## 📌 Project Overview
 
