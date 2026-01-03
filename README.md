@@ -160,15 +160,22 @@ src/main/java/ma/ebank/backend
 - Unit and integration testing
 - Docker containerization
 
-## 👨‍💻 Authors
+## 👥 Authors
 
-**Lahmidi Anas**
-- GitHub : [@anasthe03](https://github.com/anasthe03)
-- Email : anaslahmidi03@gmail.com
+**Sara Tahiri**  
+🔗 GitHub: [github.com/SaraTahiri](https://github.com/SaraTahiri)  
+💼 LinkedIn: [linkedin.com/in/tahiri-sara](https://www.linkedin.com/in/tahiri-sara/)
 
-**Tahiri Sara**
-- GitHub : [@SaraTahiri](https://github.com/SaraTahiri)
-- Email : tahirisara911@gmail.com
+**Anas Lahmidi**  
+🔗 GitHub: [github.com/anasthe03](https://github.com/anasthe03)  
+💼 LinkedIn: [linkedin.com/in/lahmidianas](https://www.linkedin.com/in/lahmidianas/)
+
+## 📞 Contact
+
+For questions, suggestions, or collaboration opportunities:
+
+📧 tahirisara911@gmail.com  
+📧 anaslahmidi03@gmail.com
 
 ## 📄 License
 
